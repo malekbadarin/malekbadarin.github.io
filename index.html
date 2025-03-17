@@ -1,9 +1,184 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <link href="./resources/styles.css" rel="stylesheet">
+    <title>Malek's HTML/CSS cheat sheet</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav id="navigation">
+        <ul>
+            <li><a href="#html-tbl">HTML table tags</a></li>
+            <li><a href="#html-tags">Common HTML tags</a></li>
+            <li><a href="#smntc-tags">Simantic HTML tags</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact details</a></li>
+        </ul>
+      </nav>
+      <div id="banner">
+        <h1>HTML & CSS cheat sheet</h1>
+      </div>
+    </header>
 
-<body>
-  <h1>Ma Bad</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
+    <a id="bck-btn" href="#navigation"><strong>Back to top</strong></a>
+    
+    <main>
+        <p id="intro">In this cheat sheet you will be able to find practical tips on commonly used HTML tags and CSS rules and properties.</p>
+        <div id="html-tbl">
+            <h3>HTML table tags</h3>
+            <table>
+            <thead>
+                <tr>
+                <th>HTML tag</th>
+                <th>Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row-reg">
+                <td>&lt;table&gt;</td>
+                <td>Initiates a table</td>
+                </tr>
+                <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Contains the table's header</td>
+                </tr>
+                <tr class="row-alt">
+                <td>&lt;tbody&gt;</td>
+                <td>Contains the table's main data</td>
+                </tr>
+                <tr class="row-reg">
+                <td>&lt;th&gt;</td>
+                <td>Defines column headers</td>
+                </tr>
+                <tr class="row-alt">
+                <td>&lt;tr&gt;</td>
+                <td>Creates a new row</td>
+                </tr>
+                <tr class="row-reg">
+                <td>&lt;td&gt;</td>
+                <td>Creates a new feild in the row</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div id="html-tags">
+            <h3>Common HTML tags</h3>
+            <table>
+            <thead>
+                <tr>
+                <th>HTML tag</th>
+                <th>Function</th>
+                <th>Example</th>
+                <th>how it is rendered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row-reg">
+                <td>&lt;h1&gt; throgh &lt;h6&gt;</td>
+                <td>Creat a heading (h1 is largest)</td>
+                <td>&lt;h3&gt;This is an h3 heading&lt;/h3&gt;</td>
+                <td><h3>This is an h3 heading</h3></td>
+                </tr>
+                <tr class="row-alt">
+                <td>&lt;p&gt;</td>
+                <td>Create a paragraph element</td>
+                <td>&lt;p&gt;This is a paragraph element&lt;/p&gt;</td>
+                <td><p>This is a paragraph element</p></td>
+                </tr>
+                <tr class="row-reg">
+                <td>&lt;span&gt;</td>
+                <td>Create an inline span element</td>
+                <td>&lt;p&gt;This is &lt;span&gt;a span element&lt;/span&gt; inside a paragraph element&lt;/p&gt;</td>
+                <td><p>This is <span>a span element</span> inside paragraph element</p></td>
+                </tr>
+                <tr class="row-alt">
+                <td>&lt;a&gt;</td>
+                <td>Create an anchor (html link) element</td>
+                <td>&lt;a href="https//www.google.com/"&gt;This is an anchor element&lt;/a&gt;</td>
+                <td><a href="https://www.google.com/" target="_blank">This is an anchor element</a></td>
+                </tr>
+                <tr class="row-reg">
+                    <td>&lt;ul&gt;</td>
+                    <td>Creates an unordered list</td>
+                    <td>&lt;ul&gt;<br>&lt;li&gt;List item 1&lt;/li&gt;<br>&lt;li&gt;List item 2&lt;/li&gt;<br>&lt;li&gt;List item 3&lt;/li&gt;<br>&lt;/ul&gt;</td>
+                    <td><ul><li>List item 1</li><li>List item 2</li><li>List item 3</li></ul></td>
+                </tr>
+                <tr class="row-alt">
+                    <td>&lt;ol&gt;</td>
+                    <td>Creates an ordered list</td>
+                    <td>&lt;ol&gt;<br>&lt;li&gt;List item 1&lt;/li&gt;<br>&lt;li&gt;List item 2&lt;/li&gt;<br>&lt;li&gt;List item 3&lt;/li&gt;<br>&lt;/ol&gt;</td>
+                    <td><ol><li>List item 1</li><li>List item 2</li><li>List item 3</li></ol></td>
+                </tr>
+                <tr class="row-reg">
+                <td>&lt;img&gt;</td>
+                <td>Creates an image element</td>
+                <td>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Badminton-svgrepo-com.svg/600px-Badminton-svgrepo-com.svg.png?20221231163906"&gt;</td>
+                <td><img id="img-tag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Badminton-svgrepo-com.svg/600px-Badminton-svgrepo-com.svg.png?20221231163906"></td>
+                </tr>
+                <tr class="row-alt">
+                <td>&lt;video&gt;</td>
+                <td>Creates a video element</td>
+                <td>&lt;video controls src="https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/Wikipedia_Edit_2014.webm/Wikipedia_Edit_2014.webm.720p.vp9.webm"&gt;Wikipedia edit 2014 (video not available)&lt;/video&gt;</td>
+                <td><video id="vdo-tag" controls src="https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/Wikipedia_Edit_2014.webm/Wikipedia_Edit_2014.webm.720p.vp9.webm">Wikipedia edit 2024 (video not available)</video></td>
+                </tr>
+                <tr class="row-reg">
+                    <td>&lt;audio&gt;</td>
+                    <td>Creates an audio element</td>
+                    <td>&lt;audio controls src="https://upload.wikimedia.org/wikipedia/commons/9/97/Noise_of_Meimuna_opalifera.ogg"&gt;Noise of Meimuna opalifera (audio not available)&lt;/audio&gt;</td>
+                    <td><audio id="aud-tag" controls src="https://upload.wikimedia.org/wikipedia/commons/9/97/Noise_of_Meimuna_opalifera.ogg">Noise of Meimuna opalifera (audio not available)</audio></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div id="smntc-tags">
+            <h3>Simantic HTML tags</h3>
+            <p>These are HTML tags that are used instead of &lt;div&gt; tags. They offer an alternative that is more readable.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>HTML tag</th>
+                        <th>Use case</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row-reg">
+                        <td>&lt;header&gt;</td>
+                        <td>Used for the header section of the page</td>
+                        <td>&lt;header&gt;<br>&lt;h1&gt;This is the Title of the page&lt;/h1&gt;<br>&lt;h3&gt;This is the sub-heading of the page.&lt;/h3&gt;<br>&lt;/header&gt;</td>
+                    </tr>
+                    <tr class="row-alt">
+                        <td>&lt;nav&gt;</td>
+                        <td>Used for the navigation section of the page</td>
+                        <td>&lt;nav&gt;<br>&lt;ul&gt;<br>&lt;li&gt;About page&lt;/li&gt;<br>&lt;li&gt;Contace page.&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;/nav&gt;</td>
+                    </tr>
+                    <tr class="row-reg">
+                        <td>&lt;article&gt;</td>
+                        <td>Used for a self contained/independant section</td>
+                        <td>&lt;article&gt;<br>&lt;h3&gt;This is the heading of the article&lt;/h3&gt;<br>&lt;p&gt;This is the meat of the article.&lt;/p&gt;<br>&lt;/article&gt;</td>
+                    </tr>
+                    <tr class="row-alt">
+                        <td>&lt;aside&gt;</td>
+                        <td>Used for a remark that is tangentially relevant, but not completely indepnedant of the context</td>
+                        <td>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;<br>&lt;aside&gt;This is a remark that is relevant to the paragraph above.&lt;/aside&gt;</td>
+                    </tr>
+                    <tr class="row-reg">
+                        <td>&lt;footer&gt;</td>
+                        <td>Used for the footer section of the page</td>
+                        <td>&lt;footer&gt;This is the footer of the page, could contain contact details and developer information.&lt;/footer&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="about">
+            <h3>About me</h3>
+            <p>My name is Malek, and I am currently learning HTML and CSS. I am currently working on  a project to summarize the principles of HTML and CSS. I hope to one day work as a full-stack engineer =]</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p id="contact">Contact details | <strong>email:</strong> <a href="mailto:malek.badarin@gmail.com">malek.badarin@gmail.com</a> | <strong>tel:</strong> <a href="tel:+962779978164">+962 779 978 164</a></p>
+    </footer>
+  </body>
 </html>
