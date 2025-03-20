@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 html {
@@ -32,7 +32,7 @@ nav ul {
     padding: 20px;
 }
 
-#navigation a:hover, {
+#navigation a:hover {
     color: #333;
     text-decoration: underline;
 }
@@ -61,10 +61,6 @@ main * {
 
 main dev {
     margin: 20px 20px;
-}
-
-#html-tbl, #html-tags, #smntc-tags {
-    margin: 40px 40px;
 }
 
 main h3 {
@@ -142,4 +138,42 @@ footer {
 
 footer a:hover {
     color: #808080;
+}
+
+/*CSS table rules*/
+#css-val {
+    min-width: 600px;
+}
+
+#css-clr {
+    color: red;
+}
+
+#css-bckgrdclr {
+    background-color: red;
+}
+
+#css-border {
+    border: 5px dotted red;
+}
+
+#bckgrnd-img {
+    background-image: url(./cat.png);
+    background-size: 100%;
+    height: 150px;
+    color: red;
+    padding-bottom: 75px;
+}
+
+#fnt-fmly {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#fnt-size {
+    font-size: 12px;
+}
+
+#css-pad {
+    border-collapse: separate;
+    padding: 50px;
 }
